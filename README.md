@@ -11,5 +11,5 @@ You have two options
 ###### - Via IntelliJ
  Right click the WebApplication class and select Run
  
- ###### - Via Gradle
+###### - Via Gradle
  run: `gradlew run` in your terminal
