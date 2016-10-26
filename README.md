@@ -13,3 +13,7 @@ You have two options
  
 ###### - Via Gradle
  run: `gradlew run` in your terminal
+ 
+#### Next Steps
+
+Once your app is running open [http://localhost:8080](http://localhost:8080) in your browser. 
