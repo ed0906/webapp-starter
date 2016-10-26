@@ -9,7 +9,9 @@ repositories {
 
 dependencies {
     compile group: 'io.dropwizard', name: 'dropwizard-core', version: '1.0.2'
+    compile group: 'commons-io', name: 'commons-io', version: '2.5'
 
+    testCompile 'org.mockito:mockito-all:1.9.5'
     testCompile 'org.assertj:assertj-core:3.5.2'
     testCompile 'junit:junit:4.12'
 }
