@@ -1,12 +1,11 @@
 package webapp;
 
 import io.dropwizard.Application;
-import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
-import webapp.configuration.WebappStarterConfiguration;
+import webapp.configuration.WebAppStarterConfiguration;
 import webapp.resources.HelloResource;
 
-public class WebApplication extends Application<WebappStarterConfiguration> {
+public class WebApplication extends Application<WebAppStarterConfiguration> {
 
     public static void main(String... args) throws Exception {
         if(args.length == 0) {
@@ -16,12 +15,7 @@ public class WebApplication extends Application<WebappStarterConfiguration> {
     }
 
     @Override
-    public void initialize(Bootstrap bootstrap) {
-
-    }
-
-    @Override
-    public void run(WebappStarterConfiguration configuration, Environment environment) throws Exception {
+    public void run(WebAppStarterConfiguration configuration, Environment environment) throws Exception {
         environment.jersey().register(HelloResource.class);
     }
 }
